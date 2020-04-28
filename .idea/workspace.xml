@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac0d4f4c-ef08-4635-bf86-936bc1c4e0dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1bAmRF3vsiBarBNnz2190Dlzpe3" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ContactList" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac0d4f4c-ef08-4635-bf86-936bc1c4e0dd" name="Default Changelist" comment="" />
+      <created>1588083261736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588083261736</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="30" key="#Project_Structure" timestamp="1588083272883">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="281" y="30" key="#Project_Structure/0.0.1376.744@0.0.1376.744" timestamp="1588083272883" />
+    <state x="469" y="127" key="FileChooserDialogImpl" timestamp="1588083292816">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="469" y="127" key="FileChooserDialogImpl/0.0.1376.744@0.0.1376.744" timestamp="1588083292816" />
+  </component>
+</project>
