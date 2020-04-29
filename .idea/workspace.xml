@@ -28,13 +28,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ContactList" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MoneySavingRecord" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,9 +72,37 @@
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="281" y="30" key="#Project_Structure/0.0.1376.744@0.0.1376.744" timestamp="1588083272883" />
+    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588090845150">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1588090845150" />
     <state x="469" y="127" key="FileChooserDialogImpl" timestamp="1588083292816">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="469" y="127" key="FileChooserDialogImpl/0.0.1376.744@0.0.1376.744" timestamp="1588083292816" />
+    <state width="597" height="163" key="GridCell.Tab.0.bottom" timestamp="1588154345511">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="597" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588154345511" />
+    <state width="597" height="163" key="GridCell.Tab.0.center" timestamp="1588154345510">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="597" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588154345510" />
+    <state width="597" height="163" key="GridCell.Tab.0.left" timestamp="1588154345509">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="597" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588154345509" />
+    <state width="597" height="163" key="GridCell.Tab.0.right" timestamp="1588154345510">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="597" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588154345510" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1588135079109">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588135079109" />
+    <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588135072237">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1588135072237" />
   </component>
 </project>
