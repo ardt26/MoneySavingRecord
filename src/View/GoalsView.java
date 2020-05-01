@@ -58,12 +58,9 @@ public class GoalsView extends JFrame {
         back.setBackground(font);
 
         add(btnAddGoals);
-        btnAddGoals.setBounds(35, 65, 150, 20);
+        btnAddGoals.setBounds(85, 65, 150, 20);
         btnAddGoals.setBackground(button1);
         btnAddGoals.setForeground(font);
-        add(btnGoalsDetail);
-        btnGoalsDetail.setBounds(400, 65, 150, 20);
-        btnGoalsDetail.setBackground(button2);
-        btnGoalsDetail.setForeground(font);
+
     }
 }

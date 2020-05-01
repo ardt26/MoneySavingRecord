@@ -17,6 +17,7 @@ public class GoalsDetailView extends JFrame {
 
     JButton btnAdd = new JButton("Add");
     JButton back = new JButton();
+    JButton edit = new JButton();
 
     JTable tabel;
 
@@ -76,6 +77,11 @@ public class GoalsDetailView extends JFrame {
         getLbudget.setBounds(190, 80, 120,20);
         getLbudget.setForeground(flabel);
         getLbudget.setBackground(button1);
+
+        edit.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\edit.png"));
+        add(edit);
+        edit.setBounds(265,80,20,20);
+        edit.setBackground(font);
 
         add(lbalance);
         lbalance.setBounds(90,105,90,20);
