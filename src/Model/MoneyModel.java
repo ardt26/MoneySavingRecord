@@ -28,9 +28,9 @@ public class MoneyModel {
         }
     }
 
-    public void  insertUser(int user_id, String username, String password) {
+    public void  insertUser(int user_id, String email, String username, String password) {
         try{
-            String query = "INSERT INTO `user` (`user_id`, `username`, `password`) VALUES ('"+user_id+"','"+username+"','"+password+"')";
+            String query = "INSERT INTO `user` (`user_id`, `email`, `username`, `password`) VALUES ('"+user_id+"','"+email+"','"+username+"','"+password+"')";
             statement = koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("User Successfully Added");
@@ -41,9 +41,9 @@ public class MoneyModel {
         }
     }
 
-    public void  insertTabungan(int tabungan_id, int income, int outcome, int balance, String date, int user_id) {
+    public void  insertTabungan(int tabungan_id, int balance, int user_id) {
         try{
-            String query = "INSERT INTO `tabungan` (`tabungan_id`, `income`, `outcome`,`balance`,`date`,`user_id`) VALUES ('"+tabungan_id+"','"+income+"','"+outcome+"','"+balance+"','"+date+"','"+user_id+"')";
+            String query = "INSERT INTO `tabungan` (`tabungan_id`, `balance`,`user_id`) VALUES ('"+tabungan_id+"','"+balance+"','"+user_id+"')";
             statement = koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Tabungan Successfully Added");
@@ -54,9 +54,22 @@ public class MoneyModel {
         }
     }
 
-    public void  insertGoals(int goals_id, int speciality_income, int goals_balance, String goals_name, int user_id) {
+    public void  insertTabunganDetail(int tdetail_id, String date, String desription, int income, int outcome, int total, int tabungan_id) {
         try{
-            String query = "INSERT INTO `goals` (`goals_id`, `speciality_income`, `goals_balance`, `goals_name`, `user_id`) VALUES ('"+goals_id+"','"+speciality_income+"','"+goals_balance+"','"+goals_name+"','"+user_id+"')";
+            String query = "INSERT INTO `tabungan_detail` (`tdetail_id`,`date`,`description`,`income`,`outcome`,`total`,`tabungan_id`) VALUES ('"+tdetail_id+"','"+date+"','"+desription+"','"+income+"','"+outcome+"','"+total+"','"+tabungan_id+"')";
+            statement = koneksi.createStatement();
+            statement.executeUpdate(query);
+            System.out.println("Tabungan Details Successfully Added");
+            JOptionPane.showMessageDialog(null, "Data Detail Tabungan Berhasil");
+        } catch (Exception sql) {
+            System.out.println(sql.getMessage());
+            JOptionPane.showMessageDialog(null, sql.getMessage());
+        }
+    }
+
+    public void  insertGoals(int goals_id, int goals_income, int goals_balance, String goals_name, String status, int user_id) {
+        try{
+            String query = "INSERT INTO `goals` (`goals_id`, `goals_income`, `goals_balance`, `goals_name`, `status`, `user_id`) VALUES ('"+goals_id+"','"+goals_income+"','"+goals_balance+"','"+goals_name+"','"+status+"','"+user_id+"')";
             statement = koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Goals Successfully Added");
@@ -67,9 +80,9 @@ public class MoneyModel {
         }
     }
 
-    public void  insertGoalsDetail(int detail_id, String goals_date, int amount, int goals_id) {
+    public void  insertGoalsDetail(int detail_id, String goals_date, int amount, int gtotal, int goals_id) {
         try{
-            String query = "INSERT INTO `goals_detail` (`detail_id`, `goals_date`, `amount`, `goals_id`) VALUES ('"+detail_id+"','"+goals_date+"','"+amount+"','"+goals_id+"')";
+            String query = "INSERT INTO `goals_detail` (`detail_id`, `goals_date`, `amount`, `gtotal`, `goals_id`) VALUES ('"+detail_id+"','"+goals_date+"','"+amount+"','"+gtotal+"','"+goals_id+"')";
             statement = koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Goals Successfully Added");
@@ -84,14 +97,15 @@ public class MoneyModel {
         try{
             int jmlData = 0;
 
-            String data[][] = new String[getBanyakDataUser()][3];
+            String data[][] = new String[getBanyakDataUser()][4];
 
             String query = "Select * from `user`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("user_id");
-                data[jmlData][1] = resultSet.getString("username");
-                data[jmlData][2] = resultSet.getString("password");
+                data[jmlData][1] = resultSet.getString("email");
+                data[jmlData][2] = resultSet.getString("username");
+                data[jmlData][3] = resultSet.getString("password");
                 jmlData++;
             }
             return data;
@@ -107,17 +121,41 @@ public class MoneyModel {
         try{
             int jmlData = 0;
 
-            String data[][] = new String[getBanyakDataTabungan()][6];
+            String data[][] = new String[getBanyakDataTabungan()][3];
 
-            String query = "Select * from `mahasiswa`";
+            String query = "Select * from `tabungan`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("tabungan_id");
-                data[jmlData][1] = resultSet.getString("income");
-                data[jmlData][2] = resultSet.getString("outcome");
-                data[jmlData][3] = resultSet.getString("balance");
-                data[jmlData][4] = resultSet.getString("date");
-                data[jmlData][5] = resultSet.getString("user_id");
+                data[jmlData][1] = resultSet.getString("balance");
+                data[jmlData][2] = resultSet.getString("user_id");
+                jmlData++;
+            }
+            return data;
+
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            System.out.println("SQL Error");
+            return null;
+        }
+    }
+
+    public String[][] readTabunganDetail() {
+        try{
+            int jmlData = 0;
+
+            String data[][] = new String[getBanyakDataTabunganDetail()][7];
+
+            String query = "Select * from `tabungan_detail`";
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()){
+                data[jmlData][0] = resultSet.getString("tdetail_id");
+                data[jmlData][1] = resultSet.getString("date");
+                data[jmlData][2] = resultSet.getString("description");
+                data[jmlData][3] = resultSet.getString("income");
+                data[jmlData][4] = resultSet.getString("outcome");
+                data[jmlData][5] = resultSet.getString("total");
+                data[jmlData][6] = resultSet.getString("tabungan_id");
                 jmlData++;
             }
             return data;
@@ -133,16 +171,17 @@ public class MoneyModel {
         try{
             int jmlData = 0;
 
-            String data[][] = new String[getBanyakDataGoals()][5];
+            String data[][] = new String[getBanyakDataGoals()][6];
 
             String query = "Select * from `goals`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("goals_id");
-                data[jmlData][1] = resultSet.getString("speciality_income");
+                data[jmlData][1] = resultSet.getString("goals_income");
                 data[jmlData][2] = resultSet.getString("goals_balance");
                 data[jmlData][3] = resultSet.getString("goals_name");
-                data[jmlData][4] = resultSet.getString("user_id");
+                data[jmlData][4] = resultSet.getString("status");
+                data[jmlData][5] = resultSet.getString("user_id");
                 jmlData++;
             }
             return data;
@@ -158,7 +197,7 @@ public class MoneyModel {
         try{
             int jmlData = 0;
 
-            String data[][] = new String[getBanyakDataGoalsDetail()][4];
+            String data[][] = new String[getBanyakDataGoalsDetail()][5];
 
             String query = "Select * from `goals_detail`";
             ResultSet resultSet = statement.executeQuery(query);
@@ -166,7 +205,8 @@ public class MoneyModel {
                 data[jmlData][0] = resultSet.getString("detail_id");
                 data[jmlData][1] = resultSet.getString("goals_date");
                 data[jmlData][2] = resultSet.getString("amount");
-                data[jmlData][3] = resultSet.getString("goals_id");
+                data[jmlData][3] = resultSet.getString("gtotal");
+                data[jmlData][4] = resultSet.getString("goals_id");
                 jmlData++;
             }
             return data;
@@ -214,6 +254,23 @@ public class MoneyModel {
         try{
             statement = koneksi.createStatement();
             String query = "Select * from `tabungan`";
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                jmlData++;
+            }
+            return jmlData;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            System.out.println("SQL Error");
+            return 0;
+        }
+    }
+
+    public int getBanyakDataTabunganDetail() {
+        int jmlData = 0;
+        try{
+            statement = koneksi.createStatement();
+            String query = "Select * from `tabungan_detail`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
                 jmlData++;
@@ -282,6 +339,17 @@ public class MoneyModel {
         }
     }
 
+    public void deleteTabunganDetail (int tdetail_id) {
+        try{
+            String query = "DELETE FROM `tabungan_detail` WHERE `tdetail_id` = '"+tdetail_id+"'";
+            statement = koneksi.createStatement();
+            statement.executeUpdate(query);
+            JOptionPane.showMessageDialog(null, "Berhasil Dihapus");
+        }catch(SQLException sql) {
+            System.out.println(sql.getMessage());
+        }
+    }
+
     public void deleteGoals (int goals_id) {
         try{
             String query = "DELETE FROM `goals` WHERE `goals_id` = '"+goals_id+"'";
@@ -304,9 +372,9 @@ public class MoneyModel {
         }
     }
 
-    public void updateUser(int user_id, String username, String password) {
+    public void updateUser(int user_id, String email, String username, String password) {
         try{
-            String query = "UPDATE `user` set `user_id`='"+user_id+"', `username`='"+username+"', `password`='"+password+"' where user_id='"+user_id+"'";
+            String query = "UPDATE `user` set `user_id`='"+user_id+"',`email`='"+email+"', `username`='"+username+"', `password`='"+password+"' where user_id='"+user_id+"'";
             statement = (Statement) koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("User Successfully Updated");
@@ -317,9 +385,9 @@ public class MoneyModel {
         }
     }
 
-    public void updateTabungan(int tabungan_id, int income, int outcome, int balance, String date, int user_id) {
+    public void updateTabungan(int tabungan_id, int balance, int user_id) {
         try{
-            String query = "UPDATE `tabungan` set `tabungan_id`='"+tabungan_id+"', `income`='"+income+"', `outcome`='"+outcome+"', `balance`='"+balance+"', `date`='"+date+"', `user_id`='"+user_id+"' where tabungan_id='"+tabungan_id+"'";
+            String query = "UPDATE `tabungan` set `tabungan_id`='"+tabungan_id+"', `balance`='"+balance+"', `user_id`='"+user_id+"' where tabungan_id='"+tabungan_id+"'";
             statement = (Statement) koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Tabungan Successfully Updated");
@@ -330,9 +398,22 @@ public class MoneyModel {
         }
     }
 
-    public void updateGoals(int goals_id, int speciality_income, int goals_balance, String goals_name, int user_id) {
+    public void updateTabunganDetail(int tdetail_id, String date, String desription, int income, int outcome, int total, int tabungan_id) {
         try{
-            String query = "UPDATE `goals` set `goals_id`='"+goals_id+"', `speciality_income`='"+speciality_income+"', `goals_balance`='"+goals_balance+"', `goals_name`='"+goals_name+"', `user_id`='"+user_id+"' where goals_id='"+goals_id+"'";
+            String query = "UPDATE `tabungan_detail` set `tdetail_id`='"+tdetail_id+"', `date`='"+date+"', `description`='"+desription+"', `income`='"+income+"', `outcome`='"+outcome+"', `total`='"+total+"', `tabungan_id`='"+tabungan_id+"' where tdetail_id='"+tdetail_id+"'";
+            statement = (Statement) koneksi.createStatement();
+            statement.executeUpdate(query);
+            System.out.println("Tabungan Detail Successfully Updated");
+            JOptionPane.showMessageDialog(null, "Database Updated Successfully");
+        } catch (Exception sql) {
+            System.out.println(sql.getMessage());
+            JOptionPane.showMessageDialog(null, sql.getMessage());
+        }
+    }
+
+    public void updateGoals(int goals_id, int goals_income, int goals_balance, String goals_name, String status, int user_id) {
+        try{
+            String query = "UPDATE `goals` set `goals_id`='"+goals_id+"', `goals_income`='"+goals_income+"', `goals_balance`='"+goals_balance+"', `goals_name`='"+goals_name+"', `status`='"+status+"', `user_id`='"+user_id+"' where goals_id='"+goals_id+"'";
             statement = (Statement) koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Goals Successfully Updated");
@@ -343,9 +424,9 @@ public class MoneyModel {
         }
     }
 
-    public void updateGoalsDetail(int detail_id, String goals_date, int amount, int goals_id) {
+    public void updateGoalsDetail(int detail_id, String goals_date, int amount, int gtotal, int goals_id) {
         try{
-            String query = "UPDATE `goals_detail` set `detail_id`='"+detail_id+"', `amount`='"+amount+"', `goals_id`='"+goals_id+"' where detail_id='"+detail_id+"'";
+            String query = "UPDATE `goals_detail` set `detail_id`='"+detail_id+"', `goals_date`='"+goals_date+"', `amount`='"+amount+"', `gtotal`='"+gtotal+"', `goals_id`='"+goals_id+"' where detail_id='"+detail_id+"'";
             statement = (Statement) koneksi.createStatement();
             statement.executeUpdate(query);
             System.out.println("Goals Detail Successfully Updated");

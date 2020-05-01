@@ -1,14 +1,13 @@
 package View;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
-public class AddSaldoTabunganView extends JFrame {
+public class AddGoalsDetailView extends JFrame {
     JLabel title;
     Graphics graphics;
 
-    JLabel ldesc = new JLabel("Desc");
-    JTextField tfdesc = new JTextField();
     JLabel lamount = new JLabel("Amount");
     JTextField tfamount = new JTextField();
 
@@ -23,20 +22,18 @@ public class AddSaldoTabunganView extends JFrame {
     Color btn1 = new Color(62, 134, 160);
     Color btn2 = new Color(128, 19, 54);
 
-    public AddSaldoTabunganView() {
+    public AddGoalsDetailView() {
         getContentPane().setBackground(bgLogin);
-        //add(panel, BorderLayout.CENTER);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Money Record");
-        //pack();
         setVisible(true);
         setLayout(null);
         setSize(300, 200);
 
-        title = new JLabel("Feed your wallet, please...");
+        title = new JLabel("I know you can do it!");
         graphics = title.getGraphics();
         add(title);
-        title.setBounds(50, 10, 200, 20);
+        title.setBounds(75, 10, 200, 20);
         title.setFont(new Font("Calibri",Font.BOLD,16));
         title.setForeground(font);
 
@@ -45,18 +42,11 @@ public class AddSaldoTabunganView extends JFrame {
         back.setBounds(4,4,30,30);
         back.setBackground(font);
 
-        add(ldesc);
-        ldesc.setBounds(50,50,90, 20);
-        ldesc.setForeground(label);
-        add(tfdesc);
-        tfdesc.setBounds(110,50,120,20);
-        tfdesc.setBackground(box);
-
         add(lamount);
-        lamount.setBounds(50,75,90,20);
+        lamount.setBounds(60,45,90,20);
         lamount.setForeground(label);
         add(tfamount);
-        tfamount.setBounds(110, 75, 120, 20);
+        tfamount.setBounds(60, 65, 170, 20);
         tfamount.setBackground(box);
 
         add(btnAdd);
@@ -68,14 +58,10 @@ public class AddSaldoTabunganView extends JFrame {
         btnCancel.setBounds(100, 125,90,20);
         btnCancel.setBackground(btn2);
         btnCancel.setForeground(font);
-
     }
 
-    public String getUser() {
-        return tfdesc.getText();
-    }
-
-    public String getPass() {
+    public String getAmountGoalsDetail() {
         return tfamount.getText();
     }
+
 }
