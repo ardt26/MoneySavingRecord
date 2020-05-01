@@ -14,5 +14,6 @@ public class MVC {
     WithdrawalSaldoTabunganView withdrawalSaldoTabunganView = new WithdrawalSaldoTabunganView();
     AddGoalsDetailView addGoalsDetailView = new AddGoalsDetailView();
     AddGoalsView addGoalsView = new AddGoalsView();
+    EditBudgetView editBudgetView = new EditBudgetView();
     //Controller controller = new Controller(model,view);
 }
