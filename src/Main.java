@@ -1,5 +1,7 @@
+import MVC.HomeMVC;
+
 public class Main {
     public static void main(String[] args) {
-        MVC mvc = new MVC();
+        HomeMVC homeMvc = new HomeMVC();
     }
 }

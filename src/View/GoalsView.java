@@ -10,15 +10,14 @@ public class GoalsView extends JFrame {
     JLabel lAmount = new JLabel("Amount :");
     JLabel lAmountDB = new JLabel("Coba Munculin");
 
-    JButton btnAddGoals = new JButton("Add New Goals");
-    JButton btnGoalsDetail = new JButton("Goals Detail");
-    JButton back = new JButton();
+    public JButton btnAddGoals = new JButton("Add New Goals");
+    public JButton back = new JButton();
 
-    JTable tabel;
+    public JTable tabel;
 
     DefaultTableModel tableModel;
     JScrollPane scrollPane;
-    Object namaKolom[] = {"No","Name","Your Balance","Status"};
+    public Object namaKolom[] = {"No","Name","Budget","Status"};
 
     Color background = new Color(23, 34, 59);
     Color button1 = new Color(62, 134, 160);
@@ -40,10 +39,10 @@ public class GoalsView extends JFrame {
         setSize(600, 450);
 
 
-        title = new JLabel("Goals");
+        title = new JLabel("Goals",JLabel.CENTER);
         title.setFont(new Font("Serif",Font.BOLD,24));
         add(title);
-        title.setBounds(255, 5, 200, 50);
+        title.setBounds(250, 5, 100, 50);
         title.setForeground(ftitle);
 
         tabel.setBackground(tbl);
@@ -58,7 +57,7 @@ public class GoalsView extends JFrame {
         back.setBackground(font);
 
         add(btnAddGoals);
-        btnAddGoals.setBounds(85, 65, 150, 20);
+        btnAddGoals.setBounds(225, 65, 150, 20);
         btnAddGoals.setBackground(button1);
         btnAddGoals.setForeground(font);
 

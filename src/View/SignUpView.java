@@ -16,17 +16,17 @@ public class SignUpView extends JFrame {
     JLabel lpass = new JLabel("Password");
     JPasswordField pfpass = new JPasswordField();
 
-    JButton btnlogin = new JButton("Sign Up");
-    JButton back = new JButton();
+    public JButton btnSignUp = new JButton("Sign Up");
+    public JButton back = new JButton();
 
-    Color bgLogin = new Color(23, 34, 59);
+    Color bgSignUp = new Color(23, 34, 59);
     Color box = new Color(107, 119, 141);
     Color label = new Color(207, 117, 0);
     Color font = new Color(255,255,255);
     Color btn = new Color(33, 230, 193);
 
     public SignUpView() {
-        getContentPane().setBackground(bgLogin);
+        getContentPane().setBackground(bgSignUp);
         //add(panel, BorderLayout.CENTER);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Money Record");
@@ -68,18 +68,22 @@ public class SignUpView extends JFrame {
         pfpass.setBounds(110, 100, 120, 20);
         pfpass.setBackground(box);
 
-        add(btnlogin);
-        btnlogin.setBounds(100, 125,90,20);
-        btnlogin.setBackground(btn);
-        btnlogin.setForeground(font);
+        add(btnSignUp);
+        btnSignUp.setBounds(100, 125,90,20);
+        btnSignUp.setBackground(btn);
+        btnSignUp.setForeground(font);
 
     }
 
-    public String getUser() {
+    public String getTfemail() {
+        return tfemail.getText();
+    }
+
+    public String getTfuser() {
         return tfuser.getText();
     }
 
-    public String getPass() {
+    public String getPfpass() {
         return pfpass.getText();
     }
 }

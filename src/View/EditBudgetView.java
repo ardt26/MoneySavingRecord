@@ -10,9 +10,8 @@ public class EditBudgetView extends JFrame {
     JLabel leditbudget = new JLabel("New Budget");
     JTextField tfeditbudget = new JTextField();
 
-    JButton btnAdd = new JButton("Edit");
-    JButton btnCancel = new JButton("Cancel");
-    JButton back = new JButton();
+    public JButton btnAdd = new JButton("Edit");
+    public JButton btnCancel = new JButton("Cancel");
 
     Color bgLogin = new Color(23, 34, 59);
     Color box = new Color(107, 119, 141);
@@ -36,11 +35,6 @@ public class EditBudgetView extends JFrame {
         title.setFont(new Font("Calibri",Font.BOLD,16));
         title.setForeground(font);
 
-        back.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\back1.png"));
-        add(back);
-        back.setBounds(4,4,30,30);
-        back.setBackground(font);
-
         add(leditbudget);
         leditbudget.setBounds(60,45,90,20);
         leditbudget.setForeground(label);
@@ -59,7 +53,11 @@ public class EditBudgetView extends JFrame {
         btnCancel.setForeground(font);
     }
 
-    public String getEditBudget() {
+    public String getBudget() {
         return tfeditbudget.getText();
+    }
+
+    public void setBudget(String tfeditbudget) {
+        this.tfeditbudget.setText(tfeditbudget);
     }
 }

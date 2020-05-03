@@ -17,8 +17,8 @@ public class HomeView extends JFrame {
     JLabel lpass = new JLabel("Password");
     JPasswordField pfpass = new JPasswordField();
 
-    JButton btnlogin = new JButton("Log In");
-    JButton btnSignup = new JButton("Sign Up");
+    public JButton btnlogin = new JButton("Log In");
+    public JButton btnSignup = new JButton("Sign Up");
 
     Color bgLogin = new Color(23, 34, 59);
     Color box = new Color(107, 119, 141);

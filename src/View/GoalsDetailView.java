@@ -9,21 +9,22 @@ public class GoalsDetailView extends JFrame {
     JLabel title;
 
     JLabel lGoalsID = new JLabel("Goals ID");
-    JLabel getlGoalsID = new JLabel("Appearance");
+    JLabel jGoalsID = new JLabel("Appearance");
     JLabel lbudget = new JLabel("Budget");
-    JLabel getLbudget = new JLabel("Appearance");
+    JLabel jBudget = new JLabel("Appearance");
     JLabel lbalance = new JLabel("Your Balance");
-    JLabel getLbalance = new JLabel("Appearance");
+    JLabel jBalance = new JLabel("Appearance");
 
-    JButton btnAdd = new JButton("Add");
-    JButton back = new JButton();
-    JButton edit = new JButton();
+    public JButton btnAdd = new JButton("Add");
+    public JButton btnDelete = new JButton("Delete");
+    public JButton edit = new JButton();
+    public JButton back = new JButton();
 
-    JTable tabel;
+    public JTable tabel;
 
     DefaultTableModel tableModel;
     JScrollPane scrollPane;
-    Object namaKolom[] = {"No","Date","Amount","Total"};
+    public Object namaKolom[] = {"No","Date","Amount","Total"};
 
     Color background = new Color(23, 34, 59);
     Color button1 = new Color(128, 19, 54);
@@ -65,18 +66,19 @@ public class GoalsDetailView extends JFrame {
         add(lGoalsID);
         lGoalsID.setBounds(90,55,90,20);
         lGoalsID.setForeground(font);
-        add(getlGoalsID);
-        getlGoalsID.setBounds(190, 55, 120,20);
-        getlGoalsID.setForeground(flabel);
-        getlGoalsID.setBackground(button1);
+
+        add(jGoalsID);
+        jGoalsID.setBounds(190, 55, 120,20);
+        jGoalsID.setForeground(flabel);
+        jGoalsID.setBackground(button1);
 
         add(lbudget);
         lbudget.setBounds(90,80,90,20);
         lbudget.setForeground(font);
-        add(getLbudget);
-        getLbudget.setBounds(190, 80, 120,20);
-        getLbudget.setForeground(flabel);
-        getLbudget.setBackground(button1);
+        add(jBudget);
+        jBudget.setBounds(190, 80, 120,20);
+        jBudget.setForeground(flabel);
+        jBudget.setBackground(button1);
 
         edit.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\edit.png"));
         add(edit);
@@ -86,15 +88,30 @@ public class GoalsDetailView extends JFrame {
         add(lbalance);
         lbalance.setBounds(90,105,90,20);
         lbalance.setForeground(font);
-        add(getLbalance);
-        getLbalance.setBounds(190, 105, 120,20);
-        getLbalance.setForeground(flabel);
-        getLbalance.setBackground(button1);
+        add(jBalance);
+        jBalance.setBounds(190, 105, 120,20);
+        jBalance.setForeground(flabel);
+        jBalance.setBackground(button1);
 
         add(btnAdd);
-        btnAdd.setBounds(400, 60, 110, 60);
+        btnAdd.setBounds(400, 60, 110, 30);
         btnAdd.setBackground(button2);
         btnAdd.setForeground(font);
+        add(btnDelete);
+        btnDelete.setBounds(400, 90, 110, 30);
+        btnDelete.setBackground(button1);
+        btnDelete.setForeground(font);
     }
 
+    public void setjGoalsID(String jGoalsID) {
+        this.jGoalsID.setText(jGoalsID);
+    }
+
+    public void setjBudget(String jBudget) {
+        this.jBudget.setText(jBudget);
+    }
+
+    public void setjBalance(String jBalance) {
+        this.jBalance.setText(jBalance);
+    }
 }

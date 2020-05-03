@@ -11,9 +11,8 @@ public class AddGoalsDetailView extends JFrame {
     JLabel lamount = new JLabel("Amount");
     JTextField tfamount = new JTextField();
 
-    JButton btnAdd = new JButton("Add");
-    JButton btnCancel = new JButton("Cancel");
-    JButton back = new JButton();
+    public JButton btnAdd = new JButton("Add");
+    public JButton btnCancel = new JButton("Cancel");
 
     Color bgLogin = new Color(23, 34, 59);
     Color box = new Color(107, 119, 141);
@@ -36,11 +35,6 @@ public class AddGoalsDetailView extends JFrame {
         title.setBounds(75, 10, 200, 20);
         title.setFont(new Font("Calibri",Font.BOLD,16));
         title.setForeground(font);
-
-        back.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\back1.png"));
-        add(back);
-        back.setBounds(4,4,30,30);
-        back.setBackground(font);
 
         add(lamount);
         lamount.setBounds(60,45,90,20);

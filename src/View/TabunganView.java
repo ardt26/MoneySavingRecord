@@ -10,15 +10,15 @@ public class TabunganView extends JFrame {
     JLabel lAmount = new JLabel("Amount :");
     JLabel lAmountDB = new JLabel("Coba Munculin");
 
-    JButton btnAdd = new JButton("Add");
-    JButton btnWithdraw = new JButton("Withdraw");
-    JButton back = new JButton();
+    public JButton btnAdd = new JButton("Add");
+    public JButton btnWithdraw = new JButton("Withdraw");
+    public JButton back = new JButton();
 
-    JTable tabel;
+    public JTable tabel;
 
     DefaultTableModel tableModel;
     JScrollPane scrollPane;
-    Object namaKolom[] = {"No","Desc","Income","Outcome","Total"};
+    public Object namaKolom[] = {"No","Date","Desc","Income","Outcome","Total"};
 
     Color background = new Color(23, 34, 59);
     Color button1 = new Color(128, 19, 54);
@@ -71,5 +71,9 @@ public class TabunganView extends JFrame {
         btnWithdraw.setBounds(135, 65, 90, 20);
         btnWithdraw.setBackground(button1);
         btnWithdraw.setForeground(font);
+    }
+
+    public void setlAmountDB(String lAmountDB) {
+        this.lAmountDB.setText(lAmountDB);
     }
 }
