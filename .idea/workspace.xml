@@ -1,65 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ac0d4f4c-ef08-4635-bf86-936bc1c4e0dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AddGoalsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AddGoalsDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AddSaldoTabunganController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/EditBudgetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/GoalsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/GoalsDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TabunganController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/WithdrawalSaldoTabunganController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/AddGoalsDetailMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/AddGoalsMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/AddSaldoTabunganMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/DashboardMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/EditBudgetMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/GoalsDetailMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/GoalsMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/HomeMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/SignUpMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/TabunganMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/WithdrawalSaldoTabunganMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/GoalsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/TabunganModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageSource/back1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageSource/back2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImageSource/edit.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/Controller/MoneyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/MVC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/Model/MoneyModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddGoalsDetailView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddGoalsDetailView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddGoalsView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddGoalsView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddSaldoTabunganView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/AddSaldoTabunganView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/DashboardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/DashboardView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/EditBudgetView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/EditBudgetView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/GoalsDetailView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/GoalsDetailView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/GoalsView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/GoalsView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/HomeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/HomeView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/SignUpView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/SignUpView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/TabunganView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/TabunganView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/WithdrawalSaldoTabunganView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MoneySavingRecord/View/WithdrawalSaldoTabunganView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MoneyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/MoneyModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/AddGoalsDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddGoalsDetailView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/AddGoalsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddGoalsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/AddSaldoTabunganView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AddSaldoTabunganView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/DashboardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/DashboardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/EditBudgetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EditBudgetView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageSource/back1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageSource/back2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageSource/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/META-INF/MoneySavingRecord.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/GoalsDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/GoalsDetailView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/GoalsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/GoalsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/TabunganView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/TabunganView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/WithdrawalSaldoTabunganView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/WithdrawalSaldoTabunganView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,26 +48,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/ardt26/MoneySavingRecord.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1bAmRF3vsiBarBNnz2190Dlzpe3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -125,7 +107,26 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="236" key="#Notifications" timestamp="1588523831524">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="574" y="236" key="#Notifications/0.0.1376.744@0.0.1376.744" timestamp="1588523831524" />
     <state x="281" y="30" key="#Project_Structure" timestamp="1588083272883">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
@@ -139,6 +140,14 @@
     </state>
     <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1588090845150" />
     <state x="527" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1376.744@0.0.1376.744" timestamp="1588334435042" />
+    <state x="369" y="109" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588522805128">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="369" y="109" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1376.744@0.0.1376.744" timestamp="1588522805128" />
+    <state x="476" y="268" width="424" height="214" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588596216502">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="476" y="268" width="424" height="214" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1376.744@0.0.1376.744" timestamp="1588596216502" />
     <state x="443" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588448399125">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
@@ -155,41 +164,67 @@
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="469" y="127" key="FileChooserDialogImpl/0.0.1376.744@0.0.1376.744" timestamp="1588083292816" />
-    <state width="1333" height="141" key="GridCell.Tab.0.bottom" timestamp="1588510418876">
+    <state width="1333" height="140" key="GridCell.Tab.0.bottom" timestamp="1588734959213">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1588592112987">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="141" key="GridCell.Tab.0.bottom/0.0.1376.744@0.0.1376.744" timestamp="1588510418876" />
-    <state width="1333" height="141" key="GridCell.Tab.0.center" timestamp="1588510418876">
+    <state width="1333" height="140" key="GridCell.Tab.0.bottom/0.0.1376.744@0.0.1376.744" timestamp="1588734959213" />
+    <state width="1333" height="140" key="GridCell.Tab.0.center" timestamp="1588734959212">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1588592112987">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.center.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="141" key="GridCell.Tab.0.center/0.0.1376.744@0.0.1376.744" timestamp="1588510418876" />
-    <state width="1333" height="141" key="GridCell.Tab.0.left" timestamp="1588510418875">
+    <state width="1333" height="140" key="GridCell.Tab.0.center/0.0.1376.744@0.0.1376.744" timestamp="1588734959212" />
+    <state width="1333" height="140" key="GridCell.Tab.0.left" timestamp="1588734959212">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1588592112987">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.left.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="141" key="GridCell.Tab.0.left/0.0.1376.744@0.0.1376.744" timestamp="1588510418875" />
-    <state width="1333" height="141" key="GridCell.Tab.0.right" timestamp="1588510418876">
+    <state width="1333" height="140" key="GridCell.Tab.0.left/0.0.1376.744@0.0.1376.744" timestamp="1588734959212" />
+    <state width="1333" height="140" key="GridCell.Tab.0.right" timestamp="1588734959213">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1588592112987">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state width="1376" height="154" key="GridCell.Tab.0.right.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="141" key="GridCell.Tab.0.right/0.0.1376.744@0.0.1376.744" timestamp="1588510418876" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1588135079109">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1333" height="140" key="GridCell.Tab.0.right/0.0.1376.744@0.0.1376.744" timestamp="1588734959213" />
+    <state x="267" y="2" key="SettingsEditor" timestamp="1588649772792">
+      <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588135079109" />
-    <state x="655" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1588328976061">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="267" y="2" key="SettingsEditor/0.0.1376.744@0.0.1376.744" timestamp="1588649772792" />
+    <state x="704" y="182" key="com.intellij.ide.util.TipDialog" timestamp="1588522597479">
+      <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="655" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588328976061" />
+    <state x="704" y="182" key="com.intellij.ide.util.TipDialog/0.0.1376.744@0.0.1376.744" timestamp="1588522597479" />
     <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588135072237">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1588135072237" />
+    <state x="511" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588528048844">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="511" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1376.744@0.0.1376.744" timestamp="1588528048844" />
     <state x="345" y="167" key="run.anything.popup" timestamp="1588442490943">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
+    <state x="99" y="166" key="run.anything.popup.inPresentationMode" timestamp="1588592314470">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="99" y="166" key="run.anything.popup.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592314470" />
     <state x="345" y="167" key="run.anything.popup/0.0.1376.744@0.0.1376.744" timestamp="1588442490943" />
   </component>
 </project>

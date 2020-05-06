@@ -58,7 +58,7 @@ public class GoalsDetailView extends JFrame {
         scrollPane.setBounds(90,130,420,250);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        back.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\back1.png"));
+        back.setIcon(new ImageIcon("src\\ImageSource\\back1.png"));
         add(back);
         back.setBounds(4,4,30,30);
         back.setBackground(font);
@@ -80,7 +80,7 @@ public class GoalsDetailView extends JFrame {
         jBudget.setForeground(flabel);
         jBudget.setBackground(button1);
 
-        edit.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\edit.png"));
+        edit.setIcon(new ImageIcon("src\\ImageSource\\edit.png"));
         add(edit);
         edit.setBounds(265,80,20,20);
         edit.setBackground(font);

@@ -51,7 +51,7 @@ public class GoalsView extends JFrame {
         scrollPane.setBounds(85,120,420,250);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        back.setIcon(new ImageIcon("C:\\Users\\Asus\\Documents\\back1.png"));
+        back.setIcon(new ImageIcon("src\\ImageSource\\back1.png"));
         add(back);
         back.setBounds(4,4,30,30);
         back.setBackground(font);
