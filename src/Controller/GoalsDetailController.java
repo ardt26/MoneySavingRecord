@@ -65,7 +65,7 @@ public class GoalsDetailController {
         view.btnDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int input = JOptionPane.showConfirmDialog(null, "Apakah anda ingin menghapus Goals " + dataGoalsTerpilih[1] + "?","Delete Contact",JOptionPane.YES_NO_OPTION);
+                int input = JOptionPane.showConfirmDialog(null, "Apakah anda ingin menghapus Goals " + dataGoalsTerpilih[1] + "?","Delete Goals",JOptionPane.YES_NO_OPTION);
                 if (input == 0){
                     model.deleteGoals(dataGoalsTerpilih[4]);
                     view.setVisible(false);
