@@ -39,6 +39,9 @@ public class EditBudgetController {
                 if(Integer.parseInt(dataDetailGoals[model.getBanyakDataGoalsDetail(dataGoalsTerpilih[4])-1][3]) < Integer.parseInt(budget)){
                     String status = "Not Yet";
                     model.updateGoalsStatus(status,dataGoalsTerpilih[4]);
+                } else {
+                    String status = "Done";
+                    model.updateGoalsStatus(status,dataGoalsTerpilih[4]);
                 }
                 view.setVisible(false);
                 GoalsMVC goalsMVC = new GoalsMVC(data);

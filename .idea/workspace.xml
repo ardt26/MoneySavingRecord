@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac0d4f4c-ef08-4635-bf86-936bc1c4e0dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ImageSource/back1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImageSource/back2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImageSource/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageSource/back1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageSource/back2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageSource/edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MoneySavingRecord/META-INF/MoneySavingRecord.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/GoalsDetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/GoalsDetailView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/GoalsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/GoalsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/TabunganView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/TabunganView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EditBudgetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EditBudgetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +57,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -104,8 +105,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588083261736</updated>
+      <workItem from="1589419412429" duration="4614000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -131,6 +136,10 @@
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="281" y="30" key="#Project_Structure/0.0.1376.744@0.0.1376.744" timestamp="1588083272883" />
+    <state x="101" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589419570907">
+      <screen x="0" y="0" width="1376" height="744" />
+    </state>
+    <state x="101" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1376.744@0.0.1376.744" timestamp="1589419570907" />
     <state x="837" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1588506032641">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
@@ -164,7 +173,7 @@
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state x="469" y="127" key="FileChooserDialogImpl/0.0.1376.744@0.0.1376.744" timestamp="1588083292816" />
-    <state width="1333" height="140" key="GridCell.Tab.0.bottom" timestamp="1588734959213">
+    <state width="1331" height="180" key="GridCell.Tab.0.bottom" timestamp="1589425910027">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1588592112987">
@@ -172,8 +181,8 @@
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="140" key="GridCell.Tab.0.bottom/0.0.1376.744@0.0.1376.744" timestamp="1588734959213" />
-    <state width="1333" height="140" key="GridCell.Tab.0.center" timestamp="1588734959212">
+    <state width="1331" height="180" key="GridCell.Tab.0.bottom/0.0.1376.744@0.0.1376.744" timestamp="1589425910027" />
+    <state width="1331" height="180" key="GridCell.Tab.0.center" timestamp="1589425910027">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1588592112987">
@@ -181,8 +190,8 @@
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.center.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="140" key="GridCell.Tab.0.center/0.0.1376.744@0.0.1376.744" timestamp="1588734959212" />
-    <state width="1333" height="140" key="GridCell.Tab.0.left" timestamp="1588734959212">
+    <state width="1331" height="180" key="GridCell.Tab.0.center/0.0.1376.744@0.0.1376.744" timestamp="1589425910027" />
+    <state width="1331" height="180" key="GridCell.Tab.0.left" timestamp="1589425910027">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1588592112987">
@@ -190,8 +199,8 @@
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.left.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="140" key="GridCell.Tab.0.left/0.0.1376.744@0.0.1376.744" timestamp="1588734959212" />
-    <state width="1333" height="140" key="GridCell.Tab.0.right" timestamp="1588734959213">
+    <state width="1331" height="180" key="GridCell.Tab.0.left/0.0.1376.744@0.0.1376.744" timestamp="1589425910027" />
+    <state width="1331" height="180" key="GridCell.Tab.0.right" timestamp="1589425910027">
       <screen x="0" y="0" width="1376" height="744" />
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1588592112987">
@@ -199,7 +208,7 @@
     </state>
     <state width="1376" height="154" key="GridCell.Tab.0.right.inPresentationMode/0.0.1376.744@0.0.1376.744" timestamp="1588592112987" />
     <state width="596" height="155" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588331237838" />
-    <state width="1333" height="140" key="GridCell.Tab.0.right/0.0.1376.744@0.0.1376.744" timestamp="1588734959213" />
+    <state width="1331" height="180" key="GridCell.Tab.0.right/0.0.1376.744@0.0.1376.744" timestamp="1589425910027" />
     <state x="267" y="2" key="SettingsEditor" timestamp="1588649772792">
       <screen x="0" y="0" width="1376" height="744" />
     </state>

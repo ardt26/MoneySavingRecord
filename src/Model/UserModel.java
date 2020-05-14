@@ -39,7 +39,7 @@ public class UserModel {
             statement = DatabaseConnection.getKoneksi().createStatement();
             statement.executeUpdate(query);
             System.out.println("User Successfully Added");
-            JOptionPane.showMessageDialog(null, "Data User Berhasil");
+            JOptionPane.showMessageDialog(null, "User Successfully Added");
         } catch (Exception sql) {
             System.out.println(sql.getMessage());
             JOptionPane.showMessageDialog(null, sql.getMessage());
